@@ -1,0 +1,52 @@
+////// install pekages //////
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @mui/icons-material
+npm install @mui/styles --force
+
+npm i axios --force
+npm install sweetalert2 --force
+
+
+npm install @material-ui/core --force
+npm install @material-table/core --force
+
+npm i react-router-dom --force
+npm i redux --force
+npm i react-redux --force
+
+npm install  material-ui-dropzone --force
+
+npm install react-slick --force
+npm install slick-carousel --force
+
+npm i react-razorpay --force
+
+/////////// Paste link in { public/index.html } ////
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+import reportWebVitals from './reportWebVitals';
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import RootReducer from './Components/Storage/RootReducer';
+var store=createStore(RootReducer)
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+     <Provider store={store} >
+     <App />
+    </Provider>
+  </React.StrictMode>
+);
